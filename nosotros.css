@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+  
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+
+}
+body{
+  font-family: 'Bebas Neue', cursive;
+  background-color: #000000;
+}
+p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fotos{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh ;
+
+}
+
+.fotos .gallery{
+
+    max-width:750px;
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 250px 250px 250px;
+    grid-gap: 1rem;
+
+}
+
+.foto .gallery img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header{
+  background-image: linear-gradient(
+      rgb(0, 0, 0, 0.5),
+      rgba( 0, 0 , 0 , 0.5)),
+      url(IMAGENES/manos\ cocinando.jpg);
+  background-position: center center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  
+}
+.menu{
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  color: antiquewhite;
+  font-size: 35px;
+}
+
+.menu .navbar ul li{
+position: relative;
+  float: left;
+}
+
+.menu .navbar ul li a {
+  font-size: 20px;
+  padding: 22px;
+  color: rgb(134, 99, 54);
+  display: block;
+  color: rgb(247, 247, 216);
+}
+
+.menu .navbar ul li a :hover {
+  color: rgb(251, 255, 0);
+}
+
+#menu {
+  display:none;
+}
+
+.menu-icono{
+  width: 25px;
+}
+
+.menu label{
+  cursor: pointer;
+  display: none;
+}   
+
+.header-txt{
+  width: 80%;
+}
+.header-txt h1{
+  font-size: 90px;
+  line-height: 110px;
+  color: #fefcfb;
+  margin-bottom: 45px;
+
+}
+.header-txt p{
+  font-size: 30px;
+  color: #fefcfb;
+  margin-bottom: 15px;
+}
+
+
+.btn-1:hover{
+background-color: beige;
+}
+
+.direction{
+
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.direction{
+  color: #fefcfb;
+  font-size: 18px;
+}
+
+.about{
+  padding: 100px 0;
+  display: flex;
+}
+
+.about-txt{
+  width: 50%; 
+}
+.about-img{
+  width: 50%;
+}
+.about-img img{
+  width: 450px;
+}
+
+h2{
+  font-size: 70px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 18px;
+}
+
+.about-txt{
+  font-size: 20px;
+  color: rgba(250, 250, 250, 0.795);
+  margin-bottom: 70px;
+}
+
+.information{
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0;
+
+}
+
+.information-1 h3{
+  font-size: 70px;
+  color: rgba(255, 255, 255, 0.945);
+  
+}
+
+.information-1 p{
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  margin-left: 15px;
+
+}
+
+.platos{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.platos-1{
+  background-image:linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+      url(IMAGENES/eventocomida.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 500px;
+      width: 100%;
+      padding: 25px;
+}
+
+.platos-2{
+  background-image:linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+      url(IMAGENES/cocina.jpg);
+
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 500px;
+      width: 100%;
+      padding: 25px;
+}
+
+.platos-3{
+  background-image:linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+      url(IMAGENES/platos.jpg);
+
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 500px;
+      width: 100%;
+      padding: 25px;
+}
+
+.platos-4{
+  background-image:linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+      url(IMAGENES/creamos\ sonrisas.jpg);
+
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 500px;
+      width: 100%;
+      padding: 25px;
+}
+
+.txt {
+  position: relative;
+  
+}
+
+
+.txt span{
+ color: #ec7539;
+  font-size: 35px;
+}
+
+.txt h3{
+  color: #fefcfb;
+  font-size: 35px;
+}
+
+.txt p{
+  font-size: 16px;
+  color: #ffffff;
+position: absolute;
+top: 200px;
+}
+
+
+
+.footer{
+  padding: 100px 0 0 0;
+
+}
+
+.footer{
+  display: flex;
+}
+
+.footer-content{
+  display: flex;
+}
+.footer-form{
+  width: 50%;
+}
+.footer-txt{
+width: 50%;
+}
+
+.campo{
+  background-color: rgba(56, 66, 66, 0.116);
+  padding: 17px 30px;
+  outline: none;
+  color: black;
+  border: 0;
+
+}
+.footer-txt{
+  color: #fefcfb;
+  margin-bottom: 28px;
+}
+

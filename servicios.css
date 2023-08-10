@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   text-transform: capitalize;
+   text-decoration: none;
+}
+
+body{
+  font-family: 'Bebas Neue', cursive;
+  background-color: black;
+}
+
+header{
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5),rgb(0, 0, 0, 0.5)), url(IMAGENES/FONDO\ ARRIBA.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   height: 70vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  
+    
+}
+
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+
+}
+
+.menu{
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.menu .logo{
+  font-weight:  bolder;
+  font-size: 35px;
+  color: rgb(255, 254, 254);
+}
+
+.menu .navbar ul {
+
+  list-style: relativnone;
+}
+
+.menu .navbar ul li {
+
+  position: relative;
+  float: left;
+}
+
+.menu .navbar ul li a {
+
+ font-size: 18px;
+ padding: 20px;
+ color: beige;
+ display: block;
+
+}
+
+.menu .navbar ul li a:hover{
+  color: rgb(235, 250, 22);
+}
+
+#menu{
+  display: none;
+}
+
+.menu label{
+  cursor: pointer;
+  display: none;
+}
+
+.header-text{
+
+  text-align: center;
+  width: 700px;
+  
+}
+
+.header-text h1{
+
+ color: antiquewhite;
+ font-size: 100px;
+}
+
+.header-text p{
+  margin-top: 85px;
+  color: antiquewhite;
+}
+
+.services {
+  padding: 50px 0px;
+  text-align: center;
+  color: blanchedalmond;
+}
+ 
+.services h2{
+  font-size: 55px;
+  margin-bottom: 25px;
+
+}
+
+.txt-1 {
+  font-size: 18px;
+  padding: 0px 200px;
+}
+
+ .group-services{
+  display: flex;
+  justify-content: space-between;
+ }
+
+ .service{
+  padding: 35px 25px;
+
+ }
+
+ .service img{
+  width: 50px;
+  margin-bottom: 25px;
+ }
+
+ .service .h3{
+  font-size: 22px;
+  margin-bottom: 15px;
+ }
+
+
+ .service p{
+  font-size: 18px ;
+ }
+
+ .portfolio{
+   text-align: center;
+   padding: 50px 0px;
+   color: antiquewhite;
+ }
+
+.portfolio-txt{
+  margin-bottom: 50px;
+
+}
+
+.portfolio-txt h2{
+  font-size: 55px;
+  margin-bottom: 35px;
+}
+
+.portfolio-txt p{
+  font-size: 18px;
+}
+
+.imgs{
+  display: flex;
+  justify-content: center;
+}
+
+.imgs img{
+  width: 250px;
+  margin: 0px 10px;
+
+}
+
+.bg-sec{
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(IMAGENES/manos\ cocinando.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   margin: 35px 0px;
+  }
+ .bg-txt{
+    padding: 100px 0px;
+    text-align: center;
+    color: antiquewhite;
+   }
+
+ .bg-txt{
+    font-size: 25px;
+    margin-bottom: 35px;
+   }
+
+ .bg-txt p{
+   font-size: 24px;
+    margin-bottom: 25px;
+   }
+
+.btn-1{
+  display: inline-block;
+  background-color: #F61706;
+  margin-top: 35px;
+  padding: 15px 25px;
+  border-radius: 25px;
+  color: antiquewhite;
+}
+.btn-1:hover{
+  background-color: #F61706 ;
+
+}
+
+.prices {
+  padding: 50px 0px;
+  display: flex;
+  justify-content: space-between;
+  color: antiquewhite;
+}
+
+.price{
+  text-align: center;
+}
+
+.price h3{
+  font-size: 80px;
+  margin-bottom: 25px;
+
+}
+
+.price ul li{
+  font-size: 18px;
+}
+
+.footer{
+  padding: 150px 0px;
+}
+
+.ft{
+  display: flex;
+  justify-content: space-between;
+}
+
+.enlace h3{
+  color: antiquewhite;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.enlace li{
+  list-style: none;
+}
+
+.enlace a {
+  color: antiquewhite;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.enlace{
+  display: flex;
+  flex-direction: column;
+}
+
+btn-2{
+  padding: 10px  25px;
+  border: 0px;
+}
+
+.btn-3{
+  background-color: #F61706;
+  padding: 10px 25px;
+  border: 0px;
+  color: antiquewhite;
+  margin-top: 15px;
+}
+
+@media(max-width:991px){
+
+  .menu{
+    padding: 20px;
+  }
+
+  .menu label{
+    display: initial;
+
+  }
+ .menu .navbar{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #F61706;
+  display: none;
+ }
+
+ .menu .navbar ul li{
+  width: 100%;
+ }
+
+ .menu .navbar ul li a:hover{
+  color: antiquewhite;
+ }
+
+
+}
